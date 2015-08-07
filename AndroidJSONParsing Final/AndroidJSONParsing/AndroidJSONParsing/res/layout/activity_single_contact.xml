@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:padding="10dp">
+  <!-- id Label -->
+  <TextView android:id="@+id/id_label"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"            
+            android:textStyle="bold"
+            android:textColor="#43bd00"/>
+  <!-- Fname -->
+  <TextView android:id="@+id/fName_label"
+      		android:layout_width="fill_parent"
+      		android:layout_height="wrap_content"
+      		android:textStyle="bold"
+      		android:textColor="#acacac"/>
+  <!-- lname -->
+  <TextView android:id="@+id/lName_label"
+      		android:layout_width="fill_parent"
+      		android:layout_height="wrap_content"
+      		android:textStyle="bold"
+      		android:textColor="#acacac"/>
+   
+  <!-- Office Label -->
+  <TextView android:id="@+id/office_label"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#acacac"/>
+  <!-- Phone Label -->
+  <TextView android:id="@+id/phone_label"
+      		android:layout_width="fill_parent"
+      		android:layout_height="wrap_content"
+      		android:textStyle="bold"
+      		android:textColor="#acacac"/>
+  <!-- Email -->
+  <TextView android:id="@+id/email_label"
+      		android:layout_width="fill_parent"
+      		android:layout_height="wrap_content"
+      		android:textStyle="bold"/>
+  <!-- Rating -->
+  <TextView android:id="@+id/rating_label"
+      		android:layout_width="fill_parent"
+      		android:layout_height="wrap_content"
+      		android:textStyle="bold"/>
+   <Button
+     android:layout_height="wrap_content"
+     android:layout_width="wrap_content"
+     android:text="@string/getReview"
+     android:onClick="writeReview" />
+    <TextView
+            android:id="@+id/lblResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rating : "
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+ 
+        <TextView
+            android:id="@+id/txtRatingValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+        <TextView
+            android:id="@+id/lbltotalRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="totalRating : "
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+ 
+        <TextView
+            android:id="@+id/txtTotalRAting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+ <TextView
+            android:id="@+id/lblComments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Comment : "
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+   
+   <ListView
+        android:id="@+id/commentList"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+ 
+</LinearLayout>
